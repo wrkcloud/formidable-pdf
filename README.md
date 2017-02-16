@@ -13,7 +13,7 @@ macOS Sierra | Firefox | 51<br>
 Win8.1 | IE | 11* <br>
 Win8.1 | Chrome | 56* <br>
 
-WordPress | 4.7.2
+WordPress | 4.7.2<br>
 Formidable Pro | v2.03.02
 
 <h2>Basic Concept</h2>
