@@ -1,13 +1,29 @@
 # Formidable View to PDF/Print
 Create a PDF or Print of a Formidable View using your browser and no additional plugins.
 
-We have only tested this process on the following (*tested in BrowserStack):
+This tip/hack relies on your browsers print capabilities and a bare-bones WP template. It doesn't use any additional plugins and doesn't zap server resources when creating a PDF.
+
+We have included some sample files to accompany this guide.
+
+We have only tested this on the following (*tested in BrowserStack):
 
 macOS Sierra | Safari | 10.0.3<br>
 macOS Sierra | Chrome | 56<br>
 macOS Sierra | Firefox | 51<br>
 Win8.1 | IE | 11* <br>
 Win8.1 | Chrome | 56* <br>
+
+WordPress | 4.7.2
+Formidable Pro | v2.03.02
+
+<h2>Basic Concept</h2>
+
+- Create WordPress Template that reformats page to paper size
+- Create two stylesheets for the View display and Print settings
+- Create/use a View to display Formidable Entry or Entries
+- Create new page using the new template
+- Naviagte to the page
+- Save as a PDF or Print Page
 
 <h2>Step 1: Create a new Template</h2>
 First you need to create a new PHP file in your site’s theme folder: `wp-content/themes/{your_theme}/` we called ours `template-pdf.php`.<br>Once created open the file and give WordPress something to call in the Template dropdown. We'll create the HTML body of the page to hold our View as well - this includes the link tags for the stylesheets and the Formidable Display Controller.
