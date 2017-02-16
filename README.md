@@ -145,9 +145,9 @@ Here's a few things we've already found:<br>
 ````
 <h2>Previews</h2>
 
-![Preview 1](https://wrkcloud.github.io/formidable-pdf/images/Chrome-Preview-1.jpg)
-![Preview 2](https://wrkcloud.github.io/formidable-pdf/images/Chrome-Preview-2.jpg)
-![Preview 3](https://wrkcloud.github.io/formidable-pdf/images/Chrome-Preview-3.jpg)
+![Preview 1](https://raw.githubusercontent.com/wrkcloud/formidable-pdf/master/images/Chrome-Preview-1.jpg)
+![Preview 2](https://raw.githubusercontent.com/wrkcloud/formidable-pdf/master/images/Chrome-Preview-2.jpg)
+![Preview 3](https://raw.githubusercontent.com/wrkcloud/formidable-pdf/master/images/Chrome-Preview-3.jpg)
 
 
 
