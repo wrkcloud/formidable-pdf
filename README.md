@@ -96,5 +96,44 @@ To produce a PDF of the View or Print the View we will use the browser's built i
 <h4>Print Process</h4>
 - Exactly the same as the PDF Process just hit 'Print' instead!
 
-Granted this doesn't have the same UX as just clicking a download button - but until Formidable add the capability or a reliable plugin comes around this is a stop-gap we're happy to live with.
+Granted this doesn't have the same UX as just clicking a download button - but until Formidable add the capability or a reliable plugin comes around this is a stop-gap we're happy to live with.<br>
+Not to mention it doesn't eat the soul of your server resources trying to create a PDF or fill in a PDF Form.
+
+<h2>Tested Formidable Features</h2>
+Here's a list of the Formidable features and capabilities that we have tried so far (with Yes or No if it worked or not:)<br>
+- Insert a View (Yes)
+- Filter a View (Yes, we filtered using two fields and [get param] )
+- Nested Views (Yes, two Views deep)
+- Multiple Views (Yes)
+- Dynamic Fields (Yes)
+- Related Dynamic Lists (Yes)
+- Repeatable Fields (Yes)
+- Insert a View in `<title>` (Yes, useful for setting filename of the PDF)
+- Filter a View in `<title>` (No, not investigated further yet)
+
+We can't see any reason why the majority of Formidable wouldn't work - if we find more we'll add them here.
+
+<h2>Notes</h2>
+We're only 12 hours into adding this functionality to our site so it's still a baby, but as it grows and we discover new things we'll add them here.<br>
+Here's a few things we've already found:<br>
+- To permanently remove the browser placed Header and Footer add this to your `print.css`. You'll need to faf around with the `body margin` to make sure it all lines up with your printers margins - in the end we deemed it easier just to untick 'Header & Footer in the Print window (they don't show up at all when doing a PDF anyway). 
+```
+@media print {
+  @page { margin: 0; }
+  body { margin: 1.6cm; }
+}
+```
+- Browsers remove `background-color` to save ink, but if you need some color added back in there's a -webkit- property that will do the trick (in WebKit browsers...). In `print.css` add the following to the selector's declaration (you'll need this to put the colour back in PDF's as well):
+```
+-webkit-print-color-adjust: exact;
+````
+
+
+
+
+
+
+
+
+
 
