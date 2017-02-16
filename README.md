@@ -3,7 +3,7 @@ Create a PDF or Print of a Formidable View using your browser and no additional 
 
 This tip/hack relies on your browsers print capabilities and a bare-bones WP template. It doesn't use any additional plugins and doesn't zap server resources when creating a PDF.
 
-We have included some sample files to accompany this guide.
+We have included some basic sample files to accompany this guide.
 
 We have only tested this on the following (*tested in BrowserStack):
 
