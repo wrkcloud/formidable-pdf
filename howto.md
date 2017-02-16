@@ -123,12 +123,15 @@ Here's a few things we've already found:<br>
   body { margin: 1.6cm; }
 }
 ```
-- Browsers remove `background-color` to save ink, but if you need some color added back in there's a -webkit- property that will do the trick (in WebKit browsers...). In `print.css` add the following to the selector's declaration (you'll need this to put the colour back in PDF's as well):
+- Browsers remove `background-color` to save ink when printing, but if you need some color added back in there's a -webkit- property that will do the trick (in WebKit browsers only...). In `print.css` add the following to the selector's declaration (you'll need this to put the colour back in PDF's as well):
 ```
 -webkit-print-color-adjust: exact;
 ````
+<h2>Previews</h2>
 
-
+![Preview 1](https://wrkcloud.github.io/formidable-pdf/images/Chrome-Preview-1.jpg)
+![Preview 2](https://wrkcloud.github.io/formidable-pdf/images/Chrome-Preview-2.jpg)
+![Preview 3](https://wrkcloud.github.io/formidable-pdf/images/Chrome-Preview-3.jpg)
 
 
 
