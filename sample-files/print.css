@@ -1,0 +1,13 @@
+@charset "UTF-8";
+/*
+Name: Print Settings
+URI: https://github.com/wrkcloud/formidable-pdf
+Description: Formidable View to PDF/Print
+Author: Tom Milburn
+Version: 1.0
+*/
+
+@media print {
+  @page { margin: 0; }
+  body { margin: 1.6cm; }
+}

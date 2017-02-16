@@ -1,0 +1,30 @@
+@charset "UTF-8";
+/*
+Name: View Settings
+URI: https://github.com/wrkcloud/formidable-pdf
+Description: Formidable View to PDF/Print
+Author: Tom Milburn
+Version: 1.0
+*/
+
+html {
+   background: #525659;
+}
+
+div#page {
+   width:100%;
+   display: block;
+}
+
+div#view {
+   position: absolute;
+   margin: 0 auto;
+   top: 50;
+   right: 0;
+   bottom: 0;
+   left: 0;
+   width: 800px; /* Pre determined width of an A4 page */
+   max-height: 1132px; /* Maximum height of the div to maintain A4 proportions */
+   background-color: #FFFFFF;
+   border-radius: 10px;
+}
